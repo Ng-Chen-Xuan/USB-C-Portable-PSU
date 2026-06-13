@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "usbc-psu-footprints") (type "KiCad") (uri "${KIPRJMOD}/libraries/usbc-psu-footprints.pretty") (options "") (descr ""))
+)

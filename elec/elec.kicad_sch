@@ -17569,7 +17569,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_12x12mm_H8mm"
+		(property "Footprint" "Inductor_SMD:L_APV_ANR5040"
 			(at 107.95 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -17580,7 +17580,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C9906.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=TldfUgIFRgcMXgYERlcMUAVSFVgIVAdUT1ZbUFNSRFcxVlNeRlVcUlBRRllXVTsOAxUeFF5JWBYZEEoKFBINSQcJGk4dAgUUFAk%3D"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C9392.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=TldfUgIFRgcMXgYERlcMUAVSFVgIVAdUT1ZbUFNSRFcxVlNeRlRdVFRfQVVcXzsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D"
 			(at 107.95 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -17602,7 +17602,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C9906"
+		(property "LCSC" " C9392"
 			(at 107.95 157.48 90)
 			(hide yes)
 			(show_name no)

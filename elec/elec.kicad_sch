@@ -7278,16 +7278,8 @@
 		(uuid "541abf1d-b40b-459a-bcfa-6fc5e24e8203")
 	)
 	(no_connect
-		(at 375.92 53.34)
-		(uuid "5a845141-2357-4a51-a8e2-9d35e486dc84")
-	)
-	(no_connect
 		(at 58.42 83.82)
 		(uuid "7fb841bf-f241-4b6f-b5d5-42749c374604")
-	)
-	(no_connect
-		(at 375.92 58.42)
-		(uuid "aa041de5-739d-4b79-a0ba-693cba3841e4")
 	)
 	(no_connect
 		(at 58.42 99.06)
@@ -7296,10 +7288,6 @@
 	(no_connect
 		(at 340.36 60.96)
 		(uuid "b0af8df7-c7c7-41ad-88bc-4978aa028462")
-	)
-	(no_connect
-		(at 375.92 55.88)
-		(uuid "b1abbc5f-32fa-4b7e-b971-774de2d7e3bb")
 	)
 	(no_connect
 		(at 340.36 63.5)
@@ -8146,6 +8134,16 @@
 			(type default)
 		)
 		(uuid "40853413-4439-42e7-afb5-809ff56fe692")
+	)
+	(wire
+		(pts
+			(xy 375.92 55.88) (xy 397.51 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "414cf6e6-a76a-4339-b185-e2b28d12e220")
 	)
 	(wire
 		(pts
@@ -9019,6 +9017,16 @@
 	)
 	(wire
 		(pts
+			(xy 375.92 58.42) (xy 397.51 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8955915b-0c74-4e7d-bc65-ff50e1fed227")
+	)
+	(wire
+		(pts
 			(xy 101.6 106.68) (xy 101.6 105.41)
 		)
 		(stroke
@@ -9366,6 +9374,16 @@
 			(type default)
 		)
 		(uuid "a4f082b0-f109-45b0-80f1-9c343c78db8d")
+	)
+	(wire
+		(pts
+			(xy 375.92 53.34) (xy 397.51 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a733c11b-6c8e-4fca-9e58-6e493a889fd4")
 	)
 	(wire
 		(pts
@@ -10487,6 +10505,16 @@
 		)
 		(uuid "1c0cebc6-106d-4623-a6ed-40a9ff9892f1")
 	)
+	(label "OCP_INDICATOR"
+		(at 397.51 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "229bec34-d814-43d6-a2ce-b92e68865cd0")
+	)
 	(label "SDA"
 		(at 134.62 77.47 180)
 		(effects
@@ -10677,6 +10705,16 @@
 		)
 		(uuid "6a3ef57e-ee23-462a-84cf-1a24b3604f51")
 	)
+	(label "CV_INDICATOR"
+		(at 397.51 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6c5663e2-71ce-4b8b-b382-9eb416f53818")
+	)
 	(label "SCL"
 		(at 99.06 236.22 180)
 		(effects
@@ -10806,6 +10844,16 @@
 			(justify right bottom)
 		)
 		(uuid "a99935a7-37ae-4c93-beb1-dc675a56ffb5")
+	)
+	(label "CC_INDICATOR"
+		(at 397.51 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "acabaad3-4625-4a69-a021-da86cc7abb20")
 	)
 	(label "USB-C_Fault_IN"
 		(at 397.51 71.12 180)

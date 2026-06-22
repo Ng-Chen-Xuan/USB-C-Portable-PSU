@@ -1522,7 +1522,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 121.92) (xy 182.88 121.92)
+			(xy 184.15 121.92) (xy 182.88 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1672,7 +1672,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 121.92) (xy 163.83 121.92)
+			(xy 165.1 121.92) (xy 163.83 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2112,7 +2112,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 121.92) (xy 201.93 121.92)
+			(xy 203.2 121.92) (xy 201.93 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2391,7 +2391,7 @@
 		(uuid "0912e564-1bea-44df-aa36-7ef297b77af6")
 	)
 	(label "DIG_2"
-		(at 175.26 34.29 180)
+		(at 175.26 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2420,16 +2420,6 @@
 		)
 		(uuid "1526d9a5-6496-474b-9126-052ed493d8a7")
 	)
-	(label "OCP_INDICATOR"
-		(at 218.44 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "177b19f8-146a-4384-8a8b-d7791fefdda2")
-	)
 	(label "SEG_G"
 		(at 134.62 52.07 180)
 		(effects
@@ -2451,7 +2441,7 @@
 		(uuid "190b147f-7247-4eac-99dc-cb897c96f061")
 	)
 	(label "DIG_7"
-		(at 214.63 73.66 180)
+		(at 93.98 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2549,16 +2539,6 @@
 			(justify right bottom)
 		)
 		(uuid "36cf1fb7-830e-4acb-837d-6bddfe580a09")
-	)
-	(label "DIG_3"
-		(at 247.65 43.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "38c0af58-e017-487d-b7fa-96fb8733f035")
 	)
 	(label "SEG_B"
 		(at 93.98 39.37 180)
@@ -2711,7 +2691,7 @@
 		(uuid "55ba27c2-99d8-4814-957e-6b26e5c86185")
 	)
 	(label "DIG_5"
-		(at 134.62 73.66 180)
+		(at 134.62 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2749,16 +2729,6 @@
 			(justify right bottom)
 		)
 		(uuid "6474b2bd-b5ac-4913-b432-83ab7541c502")
-	)
-	(label "CC_INDICATOR"
-		(at 199.39 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "64b6d9be-f8d6-45ca-a6c8-931cc47c5cc5")
 	)
 	(label "SEG_E"
 		(at 134.62 46.99 180)
@@ -2801,7 +2771,7 @@
 		(uuid "6c98c6d9-2fd6-4057-b0bc-8a839d188604")
 	)
 	(label "DIG_4"
-		(at 93.98 73.66 180)
+		(at 134.62 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2881,7 +2851,7 @@
 		(uuid "97ef6347-060c-4882-a1cc-e1eb6edc13a6")
 	)
 	(label "DIG_3"
-		(at 214.63 34.29 180)
+		(at 175.26 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2970,18 +2940,8 @@
 		)
 		(uuid "b9d152dc-a75e-4291-a2fe-85fa8b5fa28d")
 	)
-	(label "DIG_7"
-		(at 247.65 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ba30f9ef-d7ea-4bcb-af44-5ed6c2fb7697")
-	)
 	(label "DIG_6"
-		(at 175.26 73.66 180)
+		(at 93.98 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3031,7 +2991,7 @@
 		(uuid "cc75ff29-0bf9-48a3-bafc-b311c61c34f6")
 	)
 	(label "DIG_1"
-		(at 134.62 34.29 180)
+		(at 214.63 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3059,6 +3019,16 @@
 			(justify right bottom)
 		)
 		(uuid "d22800a4-acbb-409a-8678-a6016fef7068")
+	)
+	(label "DIG_2"
+		(at 247.65 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d59ffb6c-51b7-4cb9-8d20-dddeed2dde51")
 	)
 	(label "SEG_B"
 		(at 214.63 39.37 180)
@@ -3089,6 +3059,16 @@
 			(justify right bottom)
 		)
 		(uuid "db9b192e-9f68-4d62-946e-73ad7d306a40")
+	)
+	(label "DIG_3"
+		(at 247.65 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dbe7bafa-35b0-4be6-ba6b-319c887fe27b")
 	)
 	(label "SEG_D"
 		(at 214.63 83.82 180)
@@ -3130,16 +3110,6 @@
 		)
 		(uuid "e3cc9ebf-28fd-4816-8106-8d9172cdc3a3")
 	)
-	(label "CV_INDICATOR"
-		(at 180.34 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e60a7e9a-6b9c-4f21-a1df-2f42b99aee70")
-	)
 	(label "SEG_C"
 		(at 214.63 81.28 180)
 		(effects
@@ -3151,7 +3121,7 @@
 		(uuid "eab4efba-2726-4705-afb8-72bd1690facd")
 	)
 	(label "DIG_0"
-		(at 93.98 34.29 180)
+		(at 214.63 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3219,6 +3189,39 @@
 			(justify right bottom)
 		)
 		(uuid "ff560977-b2ad-4b6b-ad8c-59e71a039848")
+	)
+	(hierarchical_label "CV_INDICATOR"
+		(shape input)
+		(at 165.1 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1069b088-0ceb-4e82-8f38-5e6e6e5f257b")
+	)
+	(hierarchical_label "OCP_INDICATOR"
+		(shape input)
+		(at 203.2 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1a62261c-4982-4d75-b419-c8dab8a7ccea")
+	)
+	(hierarchical_label "CC_INDICATOR"
+		(shape input)
+		(at 184.15 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bd2e4dab-97f0-4ddc-991f-b144a57f9791")
 	)
 	(hierarchical_label "SDA"
 		(shape input)

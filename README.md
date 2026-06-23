@@ -2,12 +2,15 @@
 
 > Speedrunning USB-C PD powered variable power supply
 
-The USB-C-Portable-PSU Project is a portable variable power supply designed using KiCad v10. As of 2026-06-23, it is designed to be used without an enclosure. The PCB was designed with a 4 layer stackup of SIG + PWR / GND / GND / PWR + SIG.
+The USB-C-Portable-PSU Project is a portable variable power supply designed using KiCad v10.
 
-This PCB design serves as both an introduction to power electronics design, as well as a practical tool for hobbyist. Theoretical design practices learnt such as minimising trace inductance, buck-boost converter topology and USB-PD design can be tested in real-life conditions; Practice in programming an LED matrix display and experimentation of the STM32 ecosystem can be gained too.
+The PCB was designed with a 4 layer stackup of SIG + PWR / GND / GND / PWR + SIG.
 
 ![PCB Front](media/3d-front.png)
 ![PCB Back](media/3d-back.png)
+
+## Objective
+This PCB design serves as both an introduction to power electronics design, as well as a practical tool for hobbyist. Theoretical design practices learnt such as minimising trace inductance, buck-boost converter topology and USB-PD design can be tested in real-life conditions; Practice in programming an LED matrix display and experimentation of the STM32 ecosystem can be gained too.
 
 ## Features
 
@@ -47,6 +50,8 @@ This PCB design serves as both an introduction to power electronics design, as w
 ## Manufacturing Notes
 
 The design is intended to be manufactured using JLCPCB, with F.Cu assembled by JLCPCB and B.Cu hand-soldered to save on cost.
+
+As of 2026-06-23, it is designed to be used without an enclosure.
 
 ## Bill of Materials
 

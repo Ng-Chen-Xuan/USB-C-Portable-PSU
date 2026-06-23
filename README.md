@@ -20,26 +20,27 @@ The PCB was designed with a 4 layer stackup of SIG + PWR / GND / GND / PWR + SIG
 </table>
 
 ## Objective
+
 This PCB design serves as both an introduction to power electronics design, as well as a practical tool for hobbyist. Theoretical design practices learnt such as minimising trace inductance, buck-boost converter topology and USB-PD design can be tested in real-life conditions; Practice in programming an LED matrix display and experimentation of the STM32 ecosystem can be gained too.
 
 ## Features
 
-- Input:
+* Input:
 
-  - Supports USB-C PD up to 28 V / 3 A
-- Output:
+  * Supports USB-C PD up to 28 V / 3 A
+* Output:
 
-  - Variable Voltage Output Selection (3.3 V - 20 V)
-  - Variable Constant Current Selection (up to 3 A)
-  - Variable OCP Current Selection
-- 7 Segment display for live voltage and current
-- Safety
+  * Variable Voltage Output Selection (3.3 V - 20 V)
+  * Variable Constant Current Selection (up to 3 A)
+  * Variable OCP Current Selection
+* 7 Segment display for live voltage and current
+* Safety
 
-  - Fault detection for USB-C PD
-  - Fault detection for buck/boost converter
-  - Temperature monitoring using thermistor
-- ST-LINK programming header
-- Exposed UART and I2C pins
+  * Fault detection for USB-C PD
+  * Fault detection for buck/boost converter
+  * Temperature monitoring using thermistor
+* ST-LINK programming header
+* Exposed UART and I2C pins
 
 <p align="center">
   <img src="media/schematics.png" alt="Schematics" width="900"><br>
@@ -61,15 +62,15 @@ This PCB design serves as both an introduction to power electronics design, as w
 
 ## File Structure
 
-- [elec/](elec/) - PCB Design Files (KiCad v10)
+* [elec/](elec/) - PCB Design Files (KiCad v10)
 
-  - [pcb.pdf](elec/pcb.pdf) - PCB layout reference file
-  - [schematics.pdf](elec/schematics.pdf) - PCB schematics reference file
-  - [jlcpcb/production_files/](elec/jlcpcb/production_files) - Production files for JLCPCB. Includes BOM, CPL, Gerber files
-- [media/](media/) - Images used in this README.md file
-- [prod/](prod) - Miscellaneous production files
-- [STM32G030K8T6/](STM32G030K8T6/) - STM32CubeMX Configuration file
-- [LICENSE](LICENSE), [LICENSES/](LICENSES/) - License files applicable to this project
+  * [pcb.pdf](elec/pcb.pdf) - PCB layout reference file
+  * [schematics.pdf](elec/schematics.pdf) - PCB schematics reference file
+  * [jlcpcb/production_files/](elec/jlcpcb/production_files) - Production files for JLCPCB. Includes BOM, CPL, Gerber files
+* [media/](media/) - Images used in this README.md file
+* [prod/](prod) - Miscellaneous production files
+* [STM32G030K8T6/](STM32G030K8T6/) - STM32CubeMX Configuration file, STM32 Code
+* [LICENSE](LICENSE), [LICENSES/](LICENSES/) - License files applicable to this project
 
 ## Manufacturing Notes
 
@@ -81,18 +82,19 @@ As of 2026-06-23, it is designed to be used without an enclosure.
 
 ### Cost Summary
 
-| Item                     | Supplier / Method | Cost (USD) | Notes                                  |
-| ------------------------ | ----------------- | ---------: | -------------------------------------- |
-| PCB fabrication          | JLCPCB            |       7.00 | PCB fabrication for MOQ batch          |
-| PCBA assembly            | JLCPCB            |     105.87 | Top-layer assembly for MOQ batch       |
-| Extra black PCB          | JLCPCB            |      15.00 | Same PCB, black, without PCBA          |
-| Stencil                  | JLCPCB            |       7.16 | For manual assembly / rework           |
-| LCSC parts order         | LCSC              |      22.47 | Loose parts order                      |
-| **Total excluding LCSC** |                   | **135.03** | JLCPCB-related cost only               |
-| **Total including LCSC** |                   | **157.50** | Full listed procurement cost, excluding shipping |
+| Item                         | Supplier / Method |                   Cost | Notes                                      |
+| ---------------------------- | ----------------- | ---------------------: | ------------------------------------------ |
+| PCB fabrication              | JLCPCB            |               USD 7.00 | PCB fabrication for MOQ batch              |
+| PCBA assembly                | JLCPCB            |             USD 105.87 | Top-layer assembly for MOQ batch           |
+| Extra black PCB              | JLCPCB            |              USD 15.00 | Same PCB, black, without PCBA              |
+| Stencil                      | JLCPCB            |               USD 7.16 | For manual assembly / rework               |
+| LCSC parts order             | LCSC              |              USD 29.23 | Loose parts order                          |
+| ST-LINK adapter              | Taobao            |              CNY 52.32 | ST-LINK adapter                            |
+| **Total excluding LCSC**     |                   |         **USD 135.03** | JLCPCB-related cost only                   |
+| **Total excluding shipping** |                   | **approx. USD 171.98** | Listed procurement cost excluding shipping |
 
-**Total paid including shipping:** USD 169.96, approximately SGD 219.99  
-Calculation: USD 143.97 + USD 25.99 = USD 169.96 (Screenshot below)
+**Total paid including shipping:** approximately USD 184.70 / SGD 238.95
+Calculation: USD 143.97 + USD 33.01 + CNY 52.32 = approximately USD 184.70
 
 ---
 
@@ -152,30 +154,40 @@ SMD button **SW2 / C115357** is excluded from JLCPCB PCBA.
 
 These parts are purchased separately from LCSC as loose parts, including spare parts, rework parts, and parts excluded from JLCPCB PCBA.
 
-| LCSC Part # | MPN                 | Manufacturer              | Package        | Description                                         | Qty | Unit Price (USD) | Extended Price (USD) |
-| ----------- | ------------------- | ------------------------- | -------------- | --------------------------------------------------- | --: | ---------------: | -------------------: |
-| C342620     | C3216X5R1V226MTJ00E | TDK                       | 1206           | 22uF ±20% 35V Ceramic Capacitor X5R 1206            |  30 |           0.3480 |                10.44 |
-| C22878      | 0603WAF1473T5E      | UNI-ROYAL                 | 0603           | 147kΩ ±1% 100mW 0603 Thick Film Resistor            | 100 |           0.0018 |                 0.18 |
-| C14858      | CL10C101JB8NNNC     | Samsung Electro-Mechanics | 0603           | 100pF ±5% 50V Ceramic Capacitor C0G 0603            | 100 |           0.0069 |                 0.69 |
-| C5199872    | CL10B105KB8NQNC     | Samsung Electro-Mechanics | 0603           | 1uF ±10% 50V Ceramic Capacitor X7R 0603             | 100 |           0.0262 |                 2.62 |
-| C2906980    | FRC0603F1003TS      | FOJAN                     | 0603           | 100kΩ ±1% 100mW 0603 Thick Film Resistor            | 100 |           0.0021 |                 0.21 |
-| C2907011    | FRC0603F2002TS      | FOJAN                     | 0603           | 20kΩ ±1% 100mW 0603 Thick Film Resistor             | 100 |           0.0019 |                 0.19 |
-| C1591       | CL10B104KB8NNNC     | Samsung Electro-Mechanics | 0603           | 100nF ±10% 50V Ceramic Capacitor X7R 0603           | 100 |           0.0122 |                 1.22 |
-| C391035     | FUET-9018           | FUET                      | SMD, 9x9mm     | Buzzers Passive Piezoelectric 4kHz 65dB SMD, 9x9mm  |  10 |           0.4248 |                 4.25 |
-| C115357     | SKRKAEE020          | ALPSALPINE                | SMD, 3.9x2.9mm | Tactile Switch SPST 2mm 3.9mm x 2.9mm Surface Mount |  20 |           0.1333 |                 2.67 |
+| LCSC Part # | MPN                 | Manufacturer              | Package                | Description                                                            | Qty | Unit Price (USD) | Extended Price (USD) |
+| ----------- | ------------------- | ------------------------- | ---------------------- | ---------------------------------------------------------------------- | --: | ---------------: | -------------------: |
+| C342620     | C3216X5R1V226MTJ00E | TDK                       | 1206                   | 22uF ±20% 35V Ceramic Capacitor X5R 1206                               |  30 |           0.3480 |                10.44 |
+| C22878      | 0603WAF1473T5E      | UNI-ROYAL                 | 0603                   | 147kΩ ±1% 100mW 0603 Thick Film Resistor                               | 100 |           0.0018 |                 0.18 |
+| C14858      | CL10C101JB8NNNC     | Samsung Electro-Mechanics | 0603                   | 100pF ±5% 50V Ceramic Capacitor C0G 0603                               | 100 |           0.0069 |                 0.69 |
+| C5199872    | CL10B105KB8NQNC     | Samsung Electro-Mechanics | 0603                   | 1uF ±10% 50V Ceramic Capacitor X7R 0603                                | 100 |           0.0262 |                 2.62 |
+| C2906980    | FRC0603F1003TS      | FOJAN                     | 0603                   | 100kΩ ±1% 100mW 0603 Thick Film Resistor                               | 100 |           0.0021 |                 0.21 |
+| C2907011    | FRC0603F2002TS      | FOJAN                     | 0603                   | 20kΩ ±1% 100mW 0603 Thick Film Resistor                                | 100 |           0.0019 |                 0.19 |
+| C1591       | CL10B104KB8NNNC     | Samsung Electro-Mechanics | 0603                   | 100nF ±10% 50V Ceramic Capacitor X7R 0603                              | 100 |           0.0122 |                 1.22 |
+| C391035     | FUET-9018           | FUET                      | SMD, 9x9mm             | Buzzers Passive (Externally Driven) Piezoelectric 4kHz 65dB SMD, 9x9mm |  10 |           0.4248 |                 4.25 |
+| C115357     | SKRKAEE020          | ALPSALPINE                | SMD, 3.9x2.9mm         | Tactile Switch SPST 2mm 3.9mm x 2.9mm Surface Mount                    |  20 |           0.1333 |                 2.67 |
+| C3816270    | TB007-508-02BE      | CUI                       | Through Hole, P=5.08mm | 2 Position Wire to Board Terminal Block 5.08mm                         |  10 |           0.6764 |                 6.76 |
 
-**LCSC order total:** USD 22.47
+**LCSC order total:** USD 29.23
+
+---
+
+### Taobao Separate Purchase
+
+| Item            | Supplier | Qty |      Cost | Notes                                        |
+| --------------- | -------- | --: | --------: | -------------------------------------------- |
+| ST-LINK adapter | Taobao   |   1 | CNY 52.32 | Used for programming/debugging adapter setup |
 
 ---
 
 ### Notes
 
-- JLCPCB PCBA is for top-layer assembly only.
-- JLCPCB's PCBA minimum order quantity is 5 PCBs, so PCBA quantities are shown both per PCB and for 5 PCBs.
-- The SMD button `SW2 / C115357` is excluded from JLCPCB PCBA and purchased separately from LCSC.
-- Loose LCSC parts include spare parts, rework parts, and parts excluded from JLCPCB PCBA.
-- The extra black PCB is the same PCB design but ordered without PCBA.
-- Stencil cost is included separately.
+* JLCPCB PCBA is for top-layer assembly only.
+* JLCPCB's PCBA minimum order quantity is 5 PCBs, so PCBA quantities are shown both per PCB and for 5 PCBs.
+* The SMD button `SW2 / C115357` is excluded from JLCPCB PCBA and purchased separately from LCSC.
+* Loose LCSC parts include spare parts, rework parts, and parts excluded from JLCPCB PCBA.
+* The extra black PCB is the same PCB design but ordered without PCBA.
+* Stencil cost is included separately.
+* The ST-LINK adapter is purchased separately from Taobao.
 
 <table>
   <tr>
@@ -194,9 +206,9 @@ These parts are purchased separately from LCSC as loose parts, including spare p
 
 This project uses multiple licenses:
 
-- Hardware design files, including schematics, PCB layout files, Gerbers, BOM files, pick-and-place files, mechanical CAD files, and enclosure designs: **CERN-OHL-S-2.0**
-- Firmware and software source code: **GPL-3.0-only**
-- Documentation, images, diagrams, and build instructions: **CC-BY-SA-4.0**
+* Hardware design files, including schematics, PCB layout files, Gerbers, BOM files, pick-and-place files, mechanical CAD files, and enclosure designs: **CERN-OHL-S-2.0**
+* Firmware and software source code: **GPL-3.0-only**
+* Documentation, images, diagrams, and build instructions: **CC-BY-SA-4.0**
 
 Full license texts are available in the `LICENSES/` directory.
 

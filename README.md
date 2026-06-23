@@ -6,8 +6,18 @@ The USB-C-Portable-PSU Project is a portable variable power supply designed usin
 
 The PCB was designed with a 4 layer stackup of SIG + PWR / GND / GND / PWR + SIG.
 
-![PCB Front](media/3d-front.png)
-![PCB Back](media/3d-back.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="media/3d-front.png" alt="PCB Front" width="400"><br>
+      <b>PCB Front</b>
+    </td>
+    <td align="center">
+      <img src="media/3d-back.png" alt="PCB Back" width="400"><br>
+      <b>PCB Back</b>
+    </td>
+  </tr>
+</table>
 
 ## Objective
 This PCB design serves as both an introduction to power electronics design, as well as a practical tool for hobbyist. Theoretical design practices learnt such as minimising trace inductance, buck-boost converter topology and USB-PD design can be tested in real-life conditions; Practice in programming an LED matrix display and experimentation of the STM32 ecosystem can be gained too.
@@ -31,9 +41,23 @@ This PCB design serves as both an introduction to power electronics design, as w
 - ST-LINK programming header
 - Exposed UART and I2C pins
 
-![Schematics](media/schematics.png)
-![Layout Front](media/layout-front.png)
-![Layout Back](media/layout-back.png)
+<p align="center">
+  <img src="media/schematics.png" alt="Schematics" width="900"><br>
+  <b>Schematics</b>
+</p>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="media/layout-front.png" alt="Layout Front" width="400"><br>
+      <b>Layout Front</b>
+    </td>
+    <td align="center">
+      <img src="media/layout-back.png" alt="Layout Back" width="400"><br>
+      <b>Layout Back</b>
+    </td>
+  </tr>
+</table>
 
 ## File Structure
 
@@ -150,8 +174,18 @@ These parts are purchased separately from LCSC as loose parts, including spare p
 - The extra black PCB is the same PCB design but ordered without PCBA.
 - Stencil cost is included separately.
 
-![Jlcpcb Order](media/order-jlcpcb.png)
-![LCSC Order](media/order-lcsc.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="media/order-jlcpcb.png" alt="JLCPCB Order" width="400"><br>
+      <b>JLCPCB Order</b>
+    </td>
+    <td align="center">
+      <img src="media/order-lcsc.png" alt="LCSC Order" width="400"><br>
+      <b>LCSC Order</b>
+    </td>
+  </tr>
+</table>
 
 ## License
 

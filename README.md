@@ -81,15 +81,18 @@ As of 2026-06-23, it is designed to be used without an enclosure.
 
 ### Cost Summary
 
-| Item                     | Supplier / Method | Cost (USD) | Notes                            |
-| ------------------------ | ----------------- | ---------: | -------------------------------- |
-| PCB fabrication          | JLCPCB            |       7.00 | PCB fabrication for MOQ batch    |
-| PCBA assembly            | JLCPCB            |     105.87 | Top-layer assembly for MOQ batch |
-| Extra black PCB          | JLCPCB            |      15.00 | Same PCB, black, without PCBA    |
-| Stencil                  | JLCPCB            |       7.16 | For manual assembly / rework     |
-| LCSC parts order         | LCSC              |      22.47 | Loose parts order                |
-| **Total excluding LCSC** |                   | **135.03** | JLCPCB-related cost only         |
-| **Total including LCSC** |                   | **157.50** | Full listed procurement cost     |
+| Item                     | Supplier / Method | Cost (USD) | Notes                                  |
+| ------------------------ | ----------------- | ---------: | -------------------------------------- |
+| PCB fabrication          | JLCPCB            |       7.00 | PCB fabrication for MOQ batch          |
+| PCBA assembly            | JLCPCB            |     105.87 | Top-layer assembly for MOQ batch       |
+| Extra black PCB          | JLCPCB            |      15.00 | Same PCB, black, without PCBA          |
+| Stencil                  | JLCPCB            |       7.16 | For manual assembly / rework           |
+| LCSC parts order         | LCSC              |      22.47 | Loose parts order                      |
+| **Total excluding LCSC** |                   | **135.03** | JLCPCB-related cost only               |
+| **Total including LCSC** |                   | **157.50** | Full listed procurement cost, excluding shipping |
+
+**Total paid including shipping:** USD 169.96, approximately SGD 219.99  
+Calculation: USD 143.97 + USD 25.99 = USD 169.96 (Screenshot below)
 
 ---
 

@@ -34,7 +34,7 @@ This PCB design serves as both an introduction to power electronics design, as w
   * Variable Constant Current Selection (up to 3 A)
   * Variable OCP Current Selection
 * 7 Segment display for live voltage and current
-* Safety
+* Safety:
 
   * Fault detection for USB-C PD
   * Fault detection for buck/boost converter
@@ -82,32 +82,29 @@ As of 2026-06-23, it is designed to be used without an enclosure.
 
 ### Cost Summary
 
-| Item                         | Supplier / Method |                   Cost | Notes                                      |
-| ---------------------------- | ----------------- | ---------------------: | ------------------------------------------ |
-| PCB fabrication              | JLCPCB            |               USD 7.00 | PCB fabrication for MOQ batch              |
-| PCBA assembly                | JLCPCB            |             USD 105.87 | Top-layer assembly for MOQ batch           |
-| Extra black PCB              | JLCPCB            |              USD 15.00 | Same PCB, black, without PCBA              |
-| Stencil                      | JLCPCB            |               USD 7.16 | For manual assembly / rework               |
-| LCSC parts order             | LCSC              |              USD 29.23 | Loose parts order                          |
-| ST-LINK adapter              | Taobao            |              CNY 52.32 | ST-LINK adapter                            |
-| **Total excluding LCSC**     |                   |         **USD 135.03** | JLCPCB-related cost only                   |
-| **Total excluding shipping** |                   | **approx. USD 171.98** | Listed procurement cost excluding shipping |
+| Item                                      | Supplier / Method |                                    Cost | Notes                                       |
+| ----------------------------------------- | ----------------- | --------------------------------------: | ------------------------------------------- |
+| JLCPCB order                              | JLCPCB            |                              USD 144.44 | PCB, top-layer PCBA, extra PCB, and stencil |
+| LCSC parts order                          | LCSC              |                               USD 30.83 | Loose parts order                           |
+| ST-LINK adapter                           | Taobao            |                               CNY 52.32 | ST-LINK adapter                             |
+| <strong>Total excluding Taobao</strong>   |                   |             <strong>USD 175.27</strong> | JLCPCB + LCSC only                          |
+| <strong>Total excluding shipping</strong> |                   | <strong>USD 175.27 + CNY 52.32</strong> | Listed procurement cost excluding shipping  |
 
-**Total paid including shipping:** approximately USD 184.70 / SGD 238.95
-Calculation: USD 143.97 + USD 33.01 + CNY 52.32 = approximately USD 184.70
+<strong>Total excluding shipping:</strong> USD 175.27 + CNY 52.32 <strong>Approximate USD equivalent:</strong> USD 182.99
+Calculation: USD 144.44 + USD 30.83 + CNY 52.32 ≈ USD 182.99
 
 ---
 
 ### JLCPCB PCBA BOM
 
 Top-layer PCBA only.
-Minimum order quantity is **5 PCBs**, so PCBA quantities are shown both **per PCB** and **for 5 PCBs**.
+Minimum order quantity is <strong>5 PCBs</strong>, so PCBA quantities are shown both <strong>per PCB</strong> and <strong>for 5 PCBs</strong>.
 
-SMD button **SW2 / C115357** is excluded from JLCPCB PCBA.
+SMD button <strong>SW2 / C115357</strong> is excluded from JLCPCB PCBA.
 
 | Comment              | Designator                                                                                                                                                                                                                                                                                                             | Footprint                                               | LCSC Part # | Qty / PCB | Total Qty for 5 PCBs |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ----------- | --------: | -------------------: |
-| 0.1uF                | C10, C2, C20, C21, C6, C7, C8, C9                                                                                                                                                                                                                                                                                      | C_0603_1608Metric                                       | C14663      |         8 |                   40 |
+| 0.1uF                | C10, C2, C20, C21, C24, C6, C7, C8, C9                                                                                                                                                                                                                                                                                 | C_0603_1608Metric                                       | C14663      |         9 |                   45 |
 | 0R                   | R33                                                                                                                                                                                                                                                                                                                    | R_0603_1608Metric                                       | C21189      |         1 |                    5 |
 | 100k                 | R15, R16, R9                                                                                                                                                                                                                                                                                                           | R_0603_1608Metric                                       | C25803      |         3 |                   15 |
 | 100pF                | C18                                                                                                                                                                                                                                                                                                                    | C_0603_1608Metric                                       | C14858      |         1 |                    5 |
@@ -115,10 +112,10 @@ SMD button **SW2 / C115357** is excluded from JLCPCB PCBA.
 | 10uF                 | C12                                                                                                                                                                                                                                                                                                                    | C_1206_3216Metric                                       | C13585      |         1 |                    5 |
 | 147k                 | R20                                                                                                                                                                                                                                                                                                                    | R_0603_1608Metric                                       | C22878      |         1 |                    5 |
 | 15m                  | R17                                                                                                                                                                                                                                                                                                                    | R_2512_6332Metric                                       | C459682     |         1 |                    5 |
-| 1M                   | R7, R8                                                                                                                                                                                                                                                                                                                 | R_0603_1608Metric                                       | C22935      |         2 |                   10 |
+| 1M                   | R40, R7, R8                                                                                                                                                                                                                                                                                                            | R_0603_1608Metric                                       | C22935      |         3 |                   15 |
 | 1k                   | R26, R27, R28, R32, R34, R35, R36                                                                                                                                                                                                                                                                                      | R_0603_1608Metric                                       | C21190      |         7 |                   35 |
-| 1uF                  | C19                                                                                                                                                                                                                                                                                                                    | C_0603_1608Metric                                       | C15849      |         1 |                    5 |
-| 20k                  | R1, R11, R14, R18, R19, R2, R21, R22, R23, R24, R25, R29, R3, R30, R31, R37, R38, R39, R4, R5                                                                                                                                                                                                                          | R_0603_1608Metric                                       | C4184       |        20 |                  100 |
+| 1uF                  | C19, C22, C23                                                                                                                                                                                                                                                                                                          | C_0603_1608Metric                                       | C15849      |         3 |                   15 |
+| 20k                  | R1, R11, R14, R18, R19, R2, R21, R22, R23, R24, R25, R29, R3, R30, R31, R37, R38, R39, R4, R41, R5                                                                                                                                                                                                                     | R_0603_1608Metric                                       | C4184       |        21 |                  105 |
 | 2k2                  | R12, R13, R6                                                                                                                                                                                                                                                                                                           | R_0603_1608Metric                                       | C4190       |         3 |                   15 |
 | 4.7uH                | L2                                                                                                                                                                                                                                                                                                                     | L_12x12mm_H8mm                                          | C24548      |         1 |                    5 |
 | 470R                 | R10                                                                                                                                                                                                                                                                                                                    | R_0603_1608Metric                                       | C23179      |         1 |                    5 |
@@ -137,8 +134,7 @@ SMD button **SW2 / C115357** is excluded from JLCPCB PCBA.
 | Thermistor_NTC       | TH1                                                                                                                                                                                                                                                                                                                    | R_0603_1608Metric                                       | C13564      |         1 |                    5 |
 | USB_C_Receptacle     | J1                                                                                                                                                                                                                                                                                                                     | USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal | C5178539    |         1 |                    5 |
 
-**JLCPCB PCBA placed quantity:** 135 components per PCB
-**Total placed components for MOQ 5:** 675 components
+<strong>JLCPCB PCBA placed quantity:</strong> 140 components per PCB <strong>Total placed components for MOQ 5:</strong> 700 components
 
 ---
 
@@ -150,24 +146,44 @@ SMD button **SW2 / C115357** is excluded from JLCPCB PCBA.
 
 ---
 
+### Hand-Soldered / Not Included in JLCPCB PCBA
+
+These parts are not included in JLCPCB PCBA and are intended to be hand-soldered.
+
+| Comment              | Designator | Footprint                                              | Qty / PCB | Total Qty for 5 PCBs |
+| -------------------- | ---------- | ------------------------------------------------------ | --------: | -------------------: |
+| Screw_Terminal_01x02 | J3         | TerminalBlock_CUI_TB007-508-02_1x02_P5.08mm_Horizontal |         1 |                    5 |
+| Conn_01x05           | J2         | PinHeader_1x05_P2.54mm_Vertical                        |         1 |                    5 |
+| Conn_01x03           | J4         | PinHeader_1x03_P2.54mm_Vertical                        |         1 |                    5 |
+| Conn_01x03           | J5         | PinHeader_1x03_P2.54mm_Vertical                        |         1 |                    5 |
+| 22uF                 | C14        | C_1206_3216Metric                                      |         1 |                    5 |
+| 22uF                 | C16        | C_1206_3216Metric                                      |         1 |                    5 |
+| 22uF                 | C13        | C_1206_3216Metric                                      |         1 |                    5 |
+| 22uF                 | C11        | C_1206_3216Metric                                      |         1 |                    5 |
+| 22uF                 | C17        | C_1206_3216Metric                                      |         1 |                    5 |
+| 22uF                 | C15        | C_1206_3216Metric                                      |         1 |                    5 |
+
+---
+
 ### LCSC Separate Purchase / Spare Parts
 
-These parts are purchased separately from LCSC as loose parts, including spare parts, rework parts, and parts excluded from JLCPCB PCBA.
+These parts are purchased separately from LCSC as loose parts, including spare parts, rework parts, hand-soldered parts, and parts excluded from JLCPCB PCBA.
 
-| LCSC Part # | MPN                 | Manufacturer              | Package                | Description                                                            | Qty | Unit Price (USD) | Extended Price (USD) |
-| ----------- | ------------------- | ------------------------- | ---------------------- | ---------------------------------------------------------------------- | --: | ---------------: | -------------------: |
-| C342620     | C3216X5R1V226MTJ00E | TDK                       | 1206                   | 22uF ±20% 35V Ceramic Capacitor X5R 1206                               |  30 |           0.3480 |                10.44 |
-| C22878      | 0603WAF1473T5E      | UNI-ROYAL                 | 0603                   | 147kΩ ±1% 100mW 0603 Thick Film Resistor                               | 100 |           0.0018 |                 0.18 |
-| C14858      | CL10C101JB8NNNC     | Samsung Electro-Mechanics | 0603                   | 100pF ±5% 50V Ceramic Capacitor C0G 0603                               | 100 |           0.0069 |                 0.69 |
-| C5199872    | CL10B105KB8NQNC     | Samsung Electro-Mechanics | 0603                   | 1uF ±10% 50V Ceramic Capacitor X7R 0603                                | 100 |           0.0262 |                 2.62 |
-| C2906980    | FRC0603F1003TS      | FOJAN                     | 0603                   | 100kΩ ±1% 100mW 0603 Thick Film Resistor                               | 100 |           0.0021 |                 0.21 |
-| C2907011    | FRC0603F2002TS      | FOJAN                     | 0603                   | 20kΩ ±1% 100mW 0603 Thick Film Resistor                                | 100 |           0.0019 |                 0.19 |
-| C1591       | CL10B104KB8NNNC     | Samsung Electro-Mechanics | 0603                   | 100nF ±10% 50V Ceramic Capacitor X7R 0603                              | 100 |           0.0122 |                 1.22 |
-| C391035     | FUET-9018           | FUET                      | SMD, 9x9mm             | Buzzers Passive (Externally Driven) Piezoelectric 4kHz 65dB SMD, 9x9mm |  10 |           0.4248 |                 4.25 |
-| C115357     | SKRKAEE020          | ALPSALPINE                | SMD, 3.9x2.9mm         | Tactile Switch SPST 2mm 3.9mm x 2.9mm Surface Mount                    |  20 |           0.1333 |                 2.67 |
-| C3816270    | TB007-508-02BE      | CUI                       | Through Hole, P=5.08mm | 2 Position Wire to Board Terminal Block 5.08mm                         |  10 |           0.6764 |                 6.76 |
+| LCSC Part # | MPN                 | Manufacturer              | Package               | Description                                                           | Qty | Unit Price (USD) | Extended Price (USD) |
+| ----------- | ------------------- | ------------------------- | --------------------- | --------------------------------------------------------------------- | --: | ---------------: | -------------------: |
+| C342620     | C3216X5R1V226MTJ00E | TDK                       | 1206                  | 22uF ±20% 35V Ceramic Capacitor X5R 1206                              |  30 |           0.3812 |                11.44 |
+| C22878      | 0603WAF1473T5E      | UNI-ROYAL                 | 0603                  | 147kΩ ±1% 100mW 0603 Thick Film Resistor                              | 100 |           0.0022 |                 0.22 |
+| C14858      | CL10C101JB8NNNC     | Samsung Electro-Mechanics | 0603                  | 100pF ±5% 50V Ceramic Capacitor C0G 0603                              | 100 |           0.0085 |                 0.85 |
+| C5199872    | CL10B105KB8NQNC     | Samsung Electro-Mechanics | 0603                  | 1uF ±10% 50V Ceramic Capacitor X7R 0603                               | 100 |           0.0262 |                 2.62 |
+| C2906980    | FRC0603F1003TS      | FOJAN                     | 0603                  | 100kΩ ±1% 100mW 0603 Thick Film Resistor                              | 100 |           0.0019 |                 0.19 |
+| C2907011    | FRC0603F2002TS      | FOJAN                     | 0603                  | 20kΩ ±1% 100mW 0603 Thick Film Resistor                               | 100 |           0.0018 |                 0.18 |
+| C1591       | CL10B104KB8NNNC     | Samsung Electro-Mechanics | 0603                  | 100nF ±10% 50V Ceramic Capacitor X7R 0603                             | 100 |           0.0142 |                 1.42 |
+| C391035     | FUET-9018           | FUET                      | SMD,9x9mm             | Buzzers Passive (Externally Driven) Piezoelectric 4kHz 65dB SMD,9x9mm |  10 |           0.4248 |                 4.25 |
+| C115357     | SKRKAEE020          | ALPSALPINE                | SMD,3.9x2.9mm         | Tactile Switch SPST 2mm 3.9mm x 2.9mm Surface Mount                   |  20 |           0.1333 |                 2.67 |
+| C3816270    | TB007-508-02BE      | CUI                       | Through Hole,P=5.08mm | 2 Position Wire to Board Terminal Block 5.08mm                        |  10 |           0.6764 |                 6.76 |
+| C2907075    | FRC0603F9103TS      | FOJAN                     | 0603                  | 910kΩ ±1% 100mW 0603 Thick Film Resistor                              | 100 |           0.0023 |                 0.23 |
 
-**LCSC order total:** USD 29.23
+<strong>LCSC order total:</strong> USD 30.83
 
 ---
 
@@ -184,9 +200,8 @@ These parts are purchased separately from LCSC as loose parts, including spare p
 * JLCPCB PCBA is for top-layer assembly only.
 * JLCPCB's PCBA minimum order quantity is 5 PCBs, so PCBA quantities are shown both per PCB and for 5 PCBs.
 * The SMD button `SW2 / C115357` is excluded from JLCPCB PCBA and purchased separately from LCSC.
-* Loose LCSC parts include spare parts, rework parts, and parts excluded from JLCPCB PCBA.
-* The extra black PCB is the same PCB design but ordered without PCBA.
-* Stencil cost is included separately.
+* Hand-soldered parts are not included in JLCPCB PCBA.
+* Loose LCSC parts include spare parts, rework parts, hand-soldered parts, and parts excluded from JLCPCB PCBA.
 * The ST-LINK adapter is purchased separately from Taobao.
 
 <table>
@@ -206,9 +221,9 @@ These parts are purchased separately from LCSC as loose parts, including spare p
 
 This project uses multiple licenses:
 
-* Hardware design files, including schematics, PCB layout files, Gerbers, BOM files, pick-and-place files, mechanical CAD files, and enclosure designs: **CERN-OHL-S-2.0**
-* Firmware and software source code: **GPL-3.0-only**
-* Documentation, images, diagrams, and build instructions: **CC-BY-SA-4.0**
+* Hardware design files, including schematics, PCB layout files, Gerbers, BOM files, pick-and-place files, mechanical CAD files, and enclosure designs: <strong>CERN-OHL-S-2.0</strong>
+* Firmware and software source code: <strong>GPL-3.0-only</strong>
+* Documentation, images, diagrams, and build instructions: <strong>CC-BY-SA-4.0</strong>
 
 Full license texts are available in the `LICENSES/` directory.
 

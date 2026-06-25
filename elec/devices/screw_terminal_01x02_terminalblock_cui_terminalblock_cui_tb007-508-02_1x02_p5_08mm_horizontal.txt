@@ -1,0 +1,11 @@
+PACKAGE 'terminalblock_cui_tb007-508-02_1x02_p5_08mm_horizontal'
+CLASS IC
+PINCOUNT 2
+PINORDER MAIN ,
+	Pin_1__1,
+	Pin_2__2
+FUNCTION MAIN MAIN ,
+	1,
+	2
+PACKAGEPROP VALUE Screw_Terminal_01x02
+END

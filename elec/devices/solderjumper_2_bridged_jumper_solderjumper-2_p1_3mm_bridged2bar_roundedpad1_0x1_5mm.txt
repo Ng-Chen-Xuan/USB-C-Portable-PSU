@@ -1,0 +1,11 @@
+PACKAGE 'solderjumper-2_p1_3mm_bridged2bar_roundedpad1_0x1_5mm'
+CLASS IC
+PINCOUNT 2
+PINORDER MAIN ,
+	A__1,
+	B__2
+FUNCTION MAIN MAIN ,
+	1,
+	2
+PACKAGEPROP VALUE SolderJumper_2_Bridged
+END

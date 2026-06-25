@@ -1,0 +1,41 @@
+PACKAGE 'wqfn-16-1ep_3x3mm_p0_5mm_ep1_75x1_75mm'
+CLASS IC
+PINCOUNT 17
+PINORDER MAIN ,
+	D+__1,
+	D-__2,
+	CC1__3,
+	CC2__4,
+	VDD__5,
+	??DEBUG?__6,
+	EN_HVDCP/OUT1__7,
+	ADDR/ORIENT__8,
+	SDA/SNK_VSET__9,
+	SCL/SNK_ISET__10,
+	??INT?__11,
+	??EN?__12,
+	FAULT/OUT2__13,
+	FLGIN__14,
+	GATE__15,
+	VBUS__16,
+	GND__17
+FUNCTION MAIN MAIN ,
+	1,
+	2,
+	3,
+	4,
+	5,
+	6,
+	7,
+	8,
+	9,
+	10,
+	11,
+	12,
+	13,
+	14,
+	15,
+	16,
+	17
+PACKAGEPROP VALUE 'HUSB238A-xxxxx-QN16R'
+END

@@ -1,11 +1,12 @@
 ﻿Index,LCSC#,MPN,Manufacturer,Package,Customer #,Description,RoHS,Quantity,MOQ,Multiple,Unit Price($),Extended Price($),Product Link
-1,C342620,C3216X5R1V226MTJ00E,TDK,1206,,22uF ±20% 35V Ceramic Capacitor X5R 1206,yes,30,10,10,0.3480,10.44,https://www.lcsc.com/product-detail/C342620.html
-2,C22878,0603WAF1473T5E,UNI-ROYAL,0603,,147kΩ ±1% 100mW 0603 Thick Film Resistor,yes,100,100,100,0.0018,0.18,https://www.lcsc.com/product-detail/C22878.html
-3,C14858,CL10C101JB8NNNC,Samsung Electro-Mechanics,0603,,100pF ±5% 50V Ceramic Capacitor C0G 0603,yes,100,100,100,0.0069,0.69,https://www.lcsc.com/product-detail/C14858.html
+1,C342620,C3216X5R1V226MTJ00E,TDK,1206,,22uF ±20% 35V Ceramic Capacitor X5R 1206,yes,30,10,10,0.3812,11.44,https://www.lcsc.com/product-detail/C342620.html
+2,C22878,0603WAF1473T5E,UNI-ROYAL,0603,,147kΩ ±1% 100mW 0603 Thick Film Resistor,yes,100,100,100,0.0022,0.22,https://www.lcsc.com/product-detail/C22878.html
+3,C14858,CL10C101JB8NNNC,Samsung Electro-Mechanics,0603,,100pF ±5% 50V Ceramic Capacitor C0G 0603,yes,100,100,100,0.0085,0.85,https://www.lcsc.com/product-detail/C14858.html
 4,C5199872,CL10B105KB8NQNC,Samsung Electro-Mechanics,0603,,1uF ±10% 50V Ceramic Capacitor X7R 0603,yes,100,50,50,0.0262,2.62,https://www.lcsc.com/product-detail/C5199872.html
-5,C2906980,FRC0603F1003TS,FOJAN,0603,,100kΩ ±1% 100mW 0603 Thick Film Resistor,yes,100,100,100,0.0021,0.21,https://www.lcsc.com/product-detail/C2906980.html
-6,C2907011,FRC0603F2002TS,FOJAN,0603,,20kΩ ±1% 100mW 0603 Thick Film Resistor,yes,100,100,100,0.0019,0.19,https://www.lcsc.com/product-detail/C2907011.html
-7,C1591,CL10B104KB8NNNC,Samsung Electro-Mechanics,0603,,100nF ±10% 50V Ceramic Capacitor X7R 0603,yes,100,100,100,0.0122,1.22,https://www.lcsc.com/product-detail/C1591.html
+5,C2906980,FRC0603F1003TS,FOJAN,0603,,100kΩ ±1% 100mW 0603 Thick Film Resistor,yes,100,100,100,0.0019,0.19,https://www.lcsc.com/product-detail/C2906980.html
+6,C2907011,FRC0603F2002TS,FOJAN,0603,,20kΩ ±1% 100mW 0603 Thick Film Resistor,yes,100,100,100,0.0018,0.18,https://www.lcsc.com/product-detail/C2907011.html
+7,C1591,CL10B104KB8NNNC,Samsung Electro-Mechanics,0603,,100nF ±10% 50V Ceramic Capacitor X7R 0603,yes,100,100,100,0.0142,1.42,https://www.lcsc.com/product-detail/C1591.html
 8,C391035,FUET-9018,FUET,"SMD,9x9mm",,"Buzzers Passive (Externally Driven) Piezoelectric 4kHz 65dB SMD,9x9mm",yes,10,1,1,0.4248,4.25,https://www.lcsc.com/product-detail/C391035.html
 9,C115357,SKRKAEE020,ALPSALPINE,"SMD,3.9x2.9mm",,Tactile Switch SPST 2mm 3.9mm x 2.9mm Surface Mount,yes,20,5,5,0.1333,2.67,https://www.lcsc.com/product-detail/C115357.html
 10,C3816270,TB007-508-02BE,CUI,"Through Hole,P=5.08mm",,2 Position Wire to Board Terminal Block 5.08mm,yes,10,1,1,0.6764,6.76,https://www.lcsc.com/product-detail/C3816270.html
+11,C2907075,FRC0603F9103TS,FOJAN,0603,,910kΩ ±1% 100mW 0603 Thick Film Resistor,yes,100,100,100,0.0023,0.23,https://www.lcsc.com/product-detail/C2907075.html

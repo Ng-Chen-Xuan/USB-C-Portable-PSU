@@ -1,0 +1,13 @@
+PACKAGE 'soic-8-1ep_3_9x4_9mm_p1_27mm_ep2_29x3mm_thermalvias'
+CLASS IC
+PINCOUNT 3
+PINORDER MAIN ,
+	D__D,
+	G__G,
+	S__S
+FUNCTION MAIN MAIN ,
+	D,
+	G,
+	S
+PACKAGEPROP VALUE AO4419
+END

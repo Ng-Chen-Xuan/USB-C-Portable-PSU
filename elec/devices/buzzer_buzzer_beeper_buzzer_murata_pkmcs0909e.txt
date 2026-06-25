@@ -1,0 +1,11 @@
+PACKAGE 'buzzer_murata_pkmcs0909e'
+CLASS IC
+PINCOUNT 2
+PINORDER MAIN ,
+	+__1,
+	-__2
+FUNCTION MAIN MAIN ,
+	1,
+	2
+PACKAGEPROP VALUE Buzzer
+END
